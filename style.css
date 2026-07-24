@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  background: #0b0b0b;
+  color: #eee;
+  font-family: Arial, sans-serif;
+}
+
+.navbar, .contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.navbar {
+  padding: 18px;
+  background: #000;
+  border-bottom: 1px solid #222;
+}
+
+.nav {
+  display: flex;
+  gap: 18px;
+}
+
+.logo {
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.hero {
+  gap: 30px;
+  padding: 48px;
+  background-image: url("Purple.png");
+}
+
+.hero-text {
+  max-width: 500px;
+  padding: 26px;
+}
+
+.hero-text h1 {
+  font-size: 36px;
+  margin: 10px;
+}
+
+.cta {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 14px;
+  border: 1px solid #bbb;
+  color: #fff;
+}
+
+.img {
+  width: 100%;
+  max-width: 200px;
+}
+
+.interests {
+  padding: 36px;
+  background: #0e0e0e;
+  border-top: 1px solid #202020;
+}
+
+.interest-boxes {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.box {
+  flex: 1;
+  min-width: 140px;
+  background: #151515;
+  border: 1px solid #222;
+  padding: 18px;
+  text-align: center;
+}
+
+.contact {
+  padding: 28px 36px;
+  background-image: url("Grey.png");
+}
+
+.contact a {
+  color: #eaf6ff;
+}
