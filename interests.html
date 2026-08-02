@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Pratyush Mohanty</title>
+  <title>Interests | Pratyush Mohanty</title>
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
 </head>
@@ -27,24 +27,15 @@
     </nav>
   </header>
 
-  <section id="home" class="hero">
-    <div class="hero-text">
-      <p>HI, I'M</p>
-      <h1>Pratyush Mohanty</h1>
-      <p>I’m a student who likes building things, learning new skills, and figuring out how stuff works.</p>
-      <button class="cta" onclick="showWelcomeMessage()">Learn more</button>
-    </div>
+  <section id="interests" class="interests page-section">
+    <h2>Interests</h2>
+    <p>I like spending time on things that are useful, interesting, or just fun to keep working on. Whether it’s a school project, a new skill, or a sport, I usually enjoy the process of getting better.</p>
 
-    <div>
-      <img class="img" src="IMG_6841.png" alt="Design preview" 
-           onmouseover="enlargeImage(this)" 
-           onmouseout="shrinkImage(this)">
+    <div class="interest-boxes">
+      <div class="box" onmouseover="highlightBox(this)" onmouseout="unhighlightBox(this)">Nature</div>
+      <div class="box" onmouseover="highlightBox(this)" onmouseout="unhighlightBox(this)">Bioengineering</div>
+      <div class="box" onmouseover="highlightBox(this)" onmouseout="unhighlightBox(this)">Table Tennis</div>
     </div>
-  </section>
-
-  <section class="home-links">
-    <h2>Explore the site</h2>
-    <p>Use the navigation bar to visit the separate pages for my interests and contact info.</p>
   </section>
 
 </body>

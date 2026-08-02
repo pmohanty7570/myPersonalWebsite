@@ -1,7 +1,8 @@
 body {
   margin: 0;
+  padding-bottom: 60px;
   background: #0b0b0b;
-  color: #eee;
+  color: #eeeeee;
   font-family: Arial, sans-serif;
 }
 
@@ -10,13 +11,6 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
-.hero {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
 
 .navbar {
   padding: 18px;
@@ -29,15 +23,29 @@ body {
   gap: 18px;
 }
 
+.nav a {
+  color: #eeeeee;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: #8fd3ff;
+}
+
 .logo {
   font-weight: bold;
   letter-spacing: 2px;
 }
 
 .hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   gap: 30px;
   padding: 48px;
   background-image: url("Purple.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-text {
@@ -47,7 +55,7 @@ body {
 
 .hero-text h1 {
   font-size: 36px;
-  margin: 10px;
+  margin: 10px 0;
 }
 
 .cta {
@@ -55,7 +63,13 @@ body {
   margin-top: 10px;
   padding: 10px 14px;
   border: 1px solid #bbb;
+  background: transparent;
   color: #fff;
+  cursor: pointer;
+}
+
+.cta:hover {
+  background: rgba(255, 255, 255, 0.12);
 }
 
 .img {
@@ -63,8 +77,12 @@ body {
   max-width: 200px;
 }
 
-.interests {
+.page-section {
   padding: 36px;
+  min-height: 70vh;
+}
+
+.interests {
   background: #0e0e0e;
   border-top: 1px solid #202020;
 }
@@ -85,11 +103,40 @@ body {
   text-align: center;
 }
 
+.box:hover {
+  background: #1f1f1f;
+}
+
 .contact {
   padding: 28px 36px;
   background-image: url("Grey.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .contact a {
   color: #eaf6ff;
+  text-decoration: none;
+  border: 1px solid currentColor;
+  padding: 10px 14px;
+}
+
+.contact a:hover {
+  background: #eaf6ff;
+  color: #000;
+}
+
+.home-links {
+  padding: 36px;
+  border-top: 1px solid #202020;
+}
+
+.theme-panel {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #111;
+  padding: 10px;
+  border-top: 1px solid #333;
 }
